@@ -1,0 +1,32 @@
+﻿@model proyecto_udemy.Models.usuario
+
+@{
+    ViewData["Title"] = "Detalle Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<hr />
+
+<div class="row">
+    <div class="col-12">
+        <div class="card border">
+            <div class="card-header">
+                <h3><strong>Detalle Usuario</strong></h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">Nombre: <strong>@Html.DisplayFor(m => m.Nombre)</strong></li>
+                <li class="list-group-item">Telefono: <strong>@Html.DisplayFor(m => m.Telefono)</strong></li>
+                <li class="list-group-item">Celular: <strong>@Html.DisplayFor(m => m.Celular)</strong></li>
+                <li class="list-group-item">Email: <strong>@Html.DisplayFor(m => m.Email)</strong></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index"> Volver a lista</a>
+</div>
+
+
